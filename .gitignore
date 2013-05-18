@@ -1,0 +1,4 @@
+.vim/.netrwhist
+.vim/bundle/*
+.zsh/.histfile
+.gitconfig.local
