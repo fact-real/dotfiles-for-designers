@@ -10,7 +10,7 @@ done
 
 mkdir -p $HOME/.zsh
 
-cp .gitconfig.local.sample $HOME/.gitconfig.local
+cp $HOME/dotfiles/samples/.gitconfig.local.sample $HOME/.gitconfig.local
 
 mkdir -p $HOME/.vim/bundle
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
