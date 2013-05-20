@@ -5,7 +5,7 @@
 ### 各種ファイルのセットアップ
 
 ```
-git clone git@github.com:chocoby/dotfiles-for-designers.git ~/dotfiles
+git clone git@github.com:fact-real/dotfiles-for-designers.git ~/dotfiles
 cd ~/dotfiles
 sh setup.sh
 ```
@@ -45,7 +45,7 @@ cp ~/dotfiles/samples/.ssh/config.sample ~/.ssh/config
 `~/.ssh/config` を編集する:
 
 初期状態では GitHub についての設定がされています。
-秘密鍵を `~/.ssh/id_rsa.github.com` に置くと、 GitHub に ssh できるようになります。
+秘密鍵を ~/.ssh/id_rsa.github.com に置くと、 GitHub に ssh できるようになります。
 
 ## 各種ツールのカスタマイズ内容やコマンドなどについての説明
 
