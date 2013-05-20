@@ -35,6 +35,18 @@ vim を起動し、以下のコマンドを入力する:
     name = username
 ```
 
+### ssh のセットアップ
+
+```
+mkdir ~/.ssh
+cp ~/dotfiles/samples/.ssh/config.sample ~/.ssh/config
+```
+
+`~/.ssh/config` を編集する:
+
+初期状態では GitHub についての設定がされています。
+秘密鍵を `~/.ssh/id_rsa.github.com` に置くと、 GitHub に ssh できるようになります。
+
 ## 各種ツールのカスタマイズ内容やコマンドなどについての説明
 
 ### zsh
