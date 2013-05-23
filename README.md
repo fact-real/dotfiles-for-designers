@@ -5,7 +5,7 @@
 ### 各種ファイルのセットアップ
 
 ```
-git clone git@github.com:fact-real/dotfiles-for-designers.git ~/dotfiles
+git clone https://github.com/fact-real/dotfiles-for-designers.git ~/dotfiles
 cd ~/dotfiles
 sh setup.sh
 ```
