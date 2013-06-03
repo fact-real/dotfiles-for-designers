@@ -42,6 +42,7 @@ alias sup='svn up'
 alias sci='svn ci'
 
 alias gst='git status'
+alias glo='git log'
 alias gtg='git tag'
 alias gtl='list=`git tag`;echo -ne $list|grep "^release_"|sed "s/release_\(.*\)/\1/"|sort -t . -k 1,1 -k 2,2n -k 3,3n|sed "s/\(.*\)/release_\1/";echo -ne $list|grep -v "^release_"|sort'
 alias gbl='git branch'

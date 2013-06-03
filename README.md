@@ -62,8 +62,9 @@ chsh -s /usr/local/bin/zsh user
 
 ### git
 
-* `gco/git co`: `git checkout`
-* `gci/git ci`: `git commit`
+* `glo/git log`: コミットログを参照
+* `gco/git co/git checkout`
+* `gci/git ci/git commit`: コミット
 
 ### vim
 
