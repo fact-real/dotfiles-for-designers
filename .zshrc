@@ -66,23 +66,6 @@ fi
 # プロンプトの設定
 autoload colors
 
-case ${UID} in
-0)
-    PROMPT="%B%{^[[31m%}%n@%m#%{^[[m%}%b "
-    PROMPT2="%B%{^[[31m%}%_#%{^[[m%}%b "
-    SPROMPT="%B%{^[[31m%}%r is correct? [n,y,a,e]:%^[[m%}%b "
-    [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-        PROMPT="%{^[[37m%}${HOST%%.*} ${PROMPT}"
-;;
-*)
-    PROMPT="%{^[[36m%}%n%%%{^[[m%} "
-    PROMPT2="%{^[[35m%}%_%%%{^[[m%} "
-    SPROMPT="%{^[[31m%}%r is correct? [n,y,a,e]:%{^[[m%} "
-    [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-        PROMPT="%{^[[37m%}${HOST%%.*} ${PROMPT}"
-;;
-esac
-
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '(%s)[%b] '
 zstyle ':vcs_info:*' actionformats '(%s)[%b]|%a '
@@ -91,6 +74,8 @@ precmd () {
     LANG=en_US.UTF-8 vcs_info
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
+
+PROMPT="[%F{green}%n@%m%f]# "
 RPROMPT="%1(v|%F{green}%1v%f|)[%~]"
 
 setopt prompt_subst
