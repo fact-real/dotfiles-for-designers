@@ -47,6 +47,15 @@ cp ~/dotfiles/samples/.ssh/config.sample ~/.ssh/config
 初期状態では GitHub についての設定がされています。
 秘密鍵を ~/.ssh/id_rsa.github.com に置くと、 GitHub に ssh できるようになります。
 
+### zsh のセットアップ
+
+ユーザーのデフォルトシェルを zsh に変更します。
+
+```
+su -
+chsh -s /usr/local/bin/zsh user
+```
+
 ## 各種ツールのカスタマイズ内容やコマンドなどについての説明
 
 ### zsh
