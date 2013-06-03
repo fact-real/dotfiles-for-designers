@@ -15,9 +15,19 @@ sh setup.sh
 * 各種ファイルのシンボリックリンクを作成
 * vim のプラグインマネージャーである vundle を clone
 
-### vim プラグインのセットアップ
+### zsh のセットアップ
 
-vim を起動し、以下のコマンドを入力する:
+ユーザーのデフォルトシェルを zsh に変更します。
+変更後、ログインし直してください。
+
+```
+su -
+chsh -s /usr/local/bin/zsh user
+```
+
+### vim のセットアップ
+
+vim を起動し、以下のコマンドを入力してプラグインをインストールする:
 
 ```
 :BundleInstall
@@ -46,15 +56,6 @@ cp ~/dotfiles/samples/.ssh/config.sample ~/.ssh/config
 
 初期状態では GitHub についての設定がされています。
 秘密鍵を ~/.ssh/id_rsa.github.com に置くと、 GitHub に ssh できるようになります。
-
-### zsh のセットアップ
-
-ユーザーのデフォルトシェルを zsh に変更します。
-
-```
-su -
-chsh -s /usr/local/bin/zsh user
-```
 
 ## 各種ツールのカスタマイズ内容やコマンドなどについての説明
 
