@@ -27,10 +27,10 @@ chsh -s /usr/local/bin/zsh user
 
 ### vim のセットアップ
 
-vim を起動し、以下のコマンドを入力してプラグインをインストールする:
+プラグインのインストール:
 
 ```
-:BundleInstall
+vim +BundleInstall
 ```
 
 ### git のセットアップ
