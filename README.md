@@ -79,6 +79,14 @@ cp ~/dotfiles/samples/.ssh/config.sample ~/.ssh/config
 * Ctrl-p/Ctrl-n で候補を選択
 * Ctrl-k で候補を決定
 
+#### プラグインについて
+
+プラグインのマネージャーに [Vundle](https://github.com/gmarik/vundle) を使用しています
+
+* `BundleInstall`: `.vimrc` に追加したプラグインのインストール
+* `BundleClean`: `.vimrc` から削除したプラグインのアンインストール
+* `BundleInstall!`: プラグインのアップデート
+
 ## 動作環境
 
 以下の環境で確認しています
