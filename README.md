@@ -67,6 +67,19 @@ cp ~/dotfiles/samples/.ssh/config.sample ~/.ssh/config
 * `gco/git co/git checkout`
 * `gci/git ci/git commit`: コミット
 
+#### git hooks
+
+`samples/git/hooks` 以下に hook を置いています。
+
+リポジトリごとに hook を設定する必要があります。
+ファイルをコピーするか、シンボリックリンクを張ると良いでしょう:
+
+```
+ln -s ~/dotfiles/samples/git/hooks/[hook のファイル名] [リポジトリのパス]/.git/hooks/
+```
+
+* **prepare-commit-msg** : コミットコメントを入力する時に、ブランチ名のチケット番号を自動で入力します。
+
 ### vim
 
 * NERDTree: ファイラ。F2 キーで起動する
