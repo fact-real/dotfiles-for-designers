@@ -177,6 +177,7 @@ Bundle "The-NERD-tree"
 " github
 Bundle "Shougo/neocomplcache"
 Bundle "Shougo/neosnippet"
+Bundle "Shougo/neosnippet-snippets"
 Bundle "honza/vim-snippets"
 Bundle "kchmck/vim-coffee-script"
 Bundle "groenewege/vim-less"
